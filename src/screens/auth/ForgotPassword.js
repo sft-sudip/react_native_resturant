@@ -4,7 +4,7 @@ import { Container, Form, Item, Input, Button, Icon, Text } from "native-base";
 import { Row, Grid } from "react-native-easy-grid";
 import styles from "../../global/AppStyles";
 
-export default class Login extends Component {
+export default class ForgetPassword extends Component {
   render() {
     return (
       <Container>
@@ -25,25 +25,10 @@ export default class Login extends Component {
                     <Input placeholder="Enter Email" />
                   </Item>
 
-                  <Item success regular style={styles.loginScreenInput}>
-                    <Icon type="MaterialIcons" name="security" />
-                    <Input placeholder="Enter Password" />
-                  </Item>
-
-                  <Button
-                    style={styles.loginScreenBtn}
-                    onPress={() => this.props.navigation.navigate("app")}
-                  >
-                    <Text>Login</Text>
+                  <Button style={styles.loginScreenBtn}>
+                    <Text>Send OTP</Text>
                   </Button>
                 </Form>
-                <Button
-                  transparent
-                  style={styles.loginForgotBtn}
-                  onPress={() => this.props.navigation.navigate("ForgotPassword")}
-                >
-                  <Text style={styles.loginForgotBtnText}>Forget Password</Text>
-                </Button>
               </View>
             </Row>
           </Grid>

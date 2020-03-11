@@ -9,8 +9,8 @@ export default StyleSheet.create({
     justifyContent: "center"
   },
   homeLogo: {
-    width: 200,
-    height: 200
+    width: 150,
+    height: 150
   },
   afterHomeLogo: {
     padding: 40,
@@ -76,4 +76,27 @@ export default StyleSheet.create({
     fontWeight: "bold"
   },
   // Sidemenu Screen End //
+
+  // Login Screen Start //
+  loginScreenBtn: {
+    alignItems: "center",
+    justifyContent: "center",
+    borderRadius: 10,
+    backgroundColor: "#74be1f",
+    borderWidth: 2,
+    borderColor: "#74be1f"
+  },
+  loginScreenInput: {
+    marginBottom: 20,
+    borderRadius: 10
+  },
+  loginForgotBtn: {
+    alignItems: "center",
+    justifyContent: "center"
+  },
+  loginForgotBtnText: {
+    color: "#ea3800",
+    marginTop: 20
+  }
+  // Login Screen End //
 });

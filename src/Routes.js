@@ -9,6 +9,7 @@ import Constants from "expo-constants";
 import AfterSplash from "./screens/auth/AfterSplash";
 import Register from "./screens/auth/Register";
 import Login from "./screens/auth/Login";
+import ForgotPassword from "./screens/auth/ForgotPassword";
 
 import Home from "./screens/tabs/Home";
 import About from "./screens/tabs/About";
@@ -52,7 +53,11 @@ const authStack = createStackNavigator(
     AfterSplash: {
       screen: AfterSplash,
       navigationOptions: authNavOptionHandler
-    }
+    },
+    ForgotPassword: {
+      screen: ForgotPassword,
+      navigationOptions: authNavOptionHandler
+    },
   },
   { initialRouteName: "AfterSplash" }
 );
