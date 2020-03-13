@@ -1,7 +1,15 @@
 import React, { Component } from "react";
 import { View, ImageBackground, Image } from "react-native";
-import { Container, Form, Item, Input, Button, Icon, Text } from "native-base";
-import { Row, Grid } from "react-native-easy-grid";
+import {
+  Container,
+  Content,
+  Form,
+  Item,
+  Input,
+  Button,
+  Icon,
+  Text
+} from "native-base";
 import styles from "../../global/AppStyles";
 
 export default class Register extends Component {
@@ -12,8 +20,8 @@ export default class Register extends Component {
           source={require("../../../assets/images/background.png")}
           style={{ width: "100%", height: "100%" }}
         >
-          <Grid>
-            <Row style={styles.container}>
+          <Content>
+            <View style={styles.registerContainer}>
               <Image
                 style={styles.homeLogo}
                 source={require("../../../assets/images/logo.png")}
@@ -21,13 +29,41 @@ export default class Register extends Component {
               <View style={styles.afterHomeLogo}>
                 <Form>
                   <Item success regular style={styles.loginScreenInput}>
+                    <Icon type="FontAwesome" name="user" />
+                    <Input placeholderTextColor="#ccc" placeholder="Enter First Name" />
+                  </Item>
+
+                  <Item success regular style={styles.loginScreenInput}>
+                    <Icon type="FontAwesome" name="user" />
+                    <Input placeholder="Enter Last Name" />
+                  </Item>
+
+                  <Item success regular style={styles.loginScreenInput}>
+                    <Icon type="MaterialIcons" name="phone" />
+                    <Input placeholder="Enter Phone No" />
+                    <Button style={styles.registerVerifyBtn}>
+                      <Text>Verify</Text>
+                    </Button>
+                  </Item>
+
+                  <Item success regular style={styles.loginScreenInput}>
+                    <Icon type="MaterialCommunityIcons" name="onepassword" />
+                    <Input placeholder="Enter OTP" />
+                  </Item>
+
+                  <Item success regular style={styles.loginScreenInput}>
                     <Icon type="MaterialIcons" name="email" />
-                    <Input placeholder="Enter Email" />
+                    <Input placeholder="Enter Email ID" />
                   </Item>
 
                   <Item success regular style={styles.loginScreenInput}>
                     <Icon type="MaterialIcons" name="security" />
                     <Input placeholder="Enter Password" />
+                  </Item>
+
+                  <Item success regular style={styles.loginScreenInput}>
+                    <Icon type="MaterialIcons" name="security" />
+                    <Input placeholder="Enter Confirm Password" />
                   </Item>
 
                   <Button
@@ -38,8 +74,8 @@ export default class Register extends Component {
                   </Button>
                 </Form>
               </View>
-            </Row>
-          </Grid>
+            </View>
+          </Content>
         </ImageBackground>
       </Container>
     );

@@ -41,7 +41,7 @@ export default class CustomHeader extends Component {
             onPress={() => this.props.navigation.navigate("MyCart")}
           >
             <Badge success>
-              <Text>2</Text>
+              <Text>4</Text>
             </Badge>
             <Icon type="MaterialIcons" name="shopping-cart" />
           </Button>

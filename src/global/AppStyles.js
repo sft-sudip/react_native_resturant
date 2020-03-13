@@ -87,8 +87,9 @@ export default StyleSheet.create({
     borderColor: "#74be1f"
   },
   loginScreenInput: {
-    marginBottom: 20,
-    borderRadius: 10
+    marginBottom: 15,
+    borderRadius: 10,
+    height: 40,
   },
   loginForgotBtn: {
     alignItems: "center",
@@ -97,6 +98,79 @@ export default StyleSheet.create({
   loginForgotBtnText: {
     color: "#ea3800",
     marginTop: 20
-  }
+  },
   // Login Screen End //
+
+  // Register Screen Start //
+  registerContainer: {
+    flex: 1,
+    justifyContent: "center",
+    alignItems: "center",
+    marginTop: 40
+  },
+  registerVerifyBtn: {
+    borderRadius: 10,
+    backgroundColor: "#f00",
+    height: 30,
+    marginRight: 4
+  },
+  // Register Screen End //
+
+  // Cart Screen Start //
+  cartView: {
+    paddingBottom: 20,
+    paddingRight: 20
+  },
+  cartListItem: {
+    paddingTop: 5, 
+    paddingBottom: 5,
+    borderBottomColor: '#dcdcdc',
+    borderBottomWidth: 1,
+  },
+  cartActionBtn: {
+    height: 30,
+    backgroundColor: "#ededed",
+    borderColor: "#dcdcdc",
+    borderWidth: 1
+  },
+  cartActionBtnText: {
+    color: "#000000"
+  },
+  cartNumberBtn: {
+    height: 30,
+    backgroundColor: "#ffffff",
+    borderColor: "#dcdcdc",
+    borderWidth: 1
+  },
+  cartAmountText: {
+    fontWeight: "bold",
+    color: "#71c015",
+    fontSize: 12
+  },
+  cartItemText: {
+    fontWeight: "bold", 
+    marginBottom: 10,
+    fontSize: 12
+  },
+  cartItemBtn: {
+    borderColor: "transparent"
+  },
+  cartTotalText: {
+    fontWeight: "bold",
+    fontSize: 12
+  },
+  cartNetTotalText: {
+    fontWeight: "bold"
+  },
+  cartTotalAmountText: {
+    fontWeight: "bold",
+    color: "#71c015",
+  },
+  // Cart Screen End //
+
+  // Checkout Screen Start //
+  checkoutView: {
+    padding: 20
+  },
+  // Checkout Screen End //
 });
