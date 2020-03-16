@@ -8,7 +8,11 @@ import {
   Input,
   Button,
   Icon,
-  Text
+  Text,
+  List,
+  ListItem,
+  Left,
+  Right
 } from "native-base";
 import CustomHeader from "../CustomHeader";
 import CustomFooter from "../CustomFooter";
@@ -25,82 +29,87 @@ export default class CheckOut extends Component {
         />
         <Content>
           <View style={styles.checkoutView}>
-            <Text style={{ fontWeight: "bold" }}>
+            <Text style={styles.checkOutViewTitle}>
               Delivery Address Details :
             </Text>
-            <View style={{ paddingTop: 20, paddingBottom: 20 }}>
+            <View style={styles.checkoutFormView}>
               <Form>
-                <Item
-                  success
-                  regular
-                  style={{ marginBottom: 15, borderRadius: 10, height: 40 }}
-                >
+                <Item success regular style={styles.checkOutFormItem}>
                   <Icon type="FontAwesome" name="user" />
-                  <Input placeholder="Enter First Name" />
+                  <Input
+                    placeholderTextColor="#A9A9A9"
+                    placeholder="Enter First Name"
+                  />
                 </Item>
 
-                <Item
-                  success
-                  regular
-                  style={{ marginBottom: 15, borderRadius: 10, height: 40 }}
-                >
+                <Item success regular style={styles.checkOutFormItem}>
                   <Icon type="FontAwesome" name="user" />
-                  <Input placeholder="Enter Last Name" />
+                  <Input
+                    placeholderTextColor="#A9A9A9"
+                    placeholder="Enter Last Name"
+                  />
                 </Item>
 
-                <Item
-                  success
-                  regular
-                  style={{ marginBottom: 15, borderRadius: 10, height: 40 }}
-                >
+                <Item success regular style={styles.checkOutFormItem}>
                   <Icon type="MaterialIcons" name="phone" />
-                  <Input placeholder="Enter Phone No" />
+                  <Input
+                    placeholderTextColor="#A9A9A9"
+                    placeholder="Enter Phone No"
+                  />
                 </Item>
 
-                <Item
-                  success
-                  regular
-                  style={{ marginBottom: 15, borderRadius: 10, height: 40 }}
-                >
+                <Item success regular style={styles.checkOutFormItem}>
                   <Icon type="MaterialIcons" name="email" />
-                  <Input placeholder="Enter Email ID" />
+                  <Input
+                    placeholderTextColor="#A9A9A9"
+                    placeholder="Enter Email ID"
+                  />
                 </Item>
 
-                <Item
-                  success
-                  regular
-                  style={{ marginBottom: 15, borderRadius: 10, height: 40 }}
-                >
-                  <Icon type="MaterialIcons" name="email" />
-                  <Input placeholder="Enter House/Flat No" />
+                <Item success regular style={styles.checkOutFormItem}>
+                  <Icon type="FontAwesome" name="home" />
+                  <Input
+                    placeholderTextColor="#A9A9A9"
+                    placeholder="Enter House/Flat No"
+                  />
                 </Item>
 
-                <Item
-                  success
-                  regular
-                  style={{ marginBottom: 15, borderRadius: 10, height: 40 }}
-                >
-                  <Icon type="MaterialIcons" name="email" />
-                  <Input placeholder="Enter Locality/Area" />
+                <Item success regular style={styles.checkOutFormItem}>
+                  <Icon type="FontAwesome" name="home" />
+                  <Input
+                    placeholderTextColor="#A9A9A9"
+                    placeholder="Enter Locality/Area"
+                  />
                 </Item>
 
-                <Item
-                  success
-                  regular
-                  style={{ marginBottom: 15, borderRadius: 10, height: 40 }}
-                >
-                  <Icon type="MaterialIcons" name="email" />
-                  <Input placeholder="Enter Address" />
+                <Item success regular style={styles.checkOutFormItem}>
+                  <Icon type="Entypo" name="address" />
+                  <Input
+                    placeholderTextColor="#A9A9A9"
+                    placeholder="Enter Address"
+                  />
                 </Item>
 
-                <Item
-                  success
-                  regular
-                  style={{ marginBottom: 15, borderRadius: 10, height: 40 }}
-                >
-                  <Icon type="MaterialIcons" name="email" />
-                  <Input placeholder="Enter Postal Code" />
+                <Item success regular style={styles.checkOutFormItem}>
+                  <Icon type="MaterialIcons" name="local-shipping" />
+                  <Input
+                    placeholderTextColor="#A9A9A9"
+                    placeholder="Enter Postal Code"
+                  />
                 </Item>
+
+                <View style={styles.checkOutTotalView}>
+                  <List>
+                    <ListItem noBorder>
+                      <Left>
+                        <Text style={styles.cartNetTotalText}>Order Total</Text>
+                      </Left>
+                      <Right>
+                        <Text style={styles.cartTotalAmountText}>920.00</Text>
+                      </Right>
+                    </ListItem>
+                  </List>
+                </View>
 
                 <Button
                   style={styles.loginScreenBtn}

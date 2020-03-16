@@ -22,12 +22,12 @@ export default class Login extends Component {
                 <Form>
                   <Item success regular style={styles.loginScreenInput}>
                     <Icon type="MaterialIcons" name="email" />
-                    <Input placeholder="Enter Email" />
+                    <Input placeholderTextColor="#A9A9A9" placeholder="Enter Email" />
                   </Item>
 
                   <Item success regular style={styles.loginScreenInput}>
                     <Icon type="MaterialIcons" name="security" />
-                    <Input placeholder="Enter Password" />
+                    <Input placeholderTextColor="#A9A9A9" placeholder="Enter Password" />
                   </Item>
 
                   <Button

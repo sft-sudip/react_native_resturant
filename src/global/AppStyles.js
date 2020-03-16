@@ -172,5 +172,28 @@ export default StyleSheet.create({
   checkoutView: {
     padding: 20
   },
+  checkOutViewTitle: {
+    fontWeight: "bold"
+  },
+  checkoutFormView: {
+    paddingTop: 20, 
+    paddingBottom: 20
+  },
+  checkOutFormItem: {
+    marginBottom: 15, 
+    borderRadius: 10, 
+    height: 40
+  },
+  checkOutTotalView: {
+    marginBottom: 15
+  }
   // Checkout Screen End //
+
+  // About Screen Start //
+
+  // About Screen End //
+
+  // Home Screen Start //
+
+  // Home Screen End //
 });

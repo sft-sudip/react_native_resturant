@@ -30,17 +30,26 @@ export default class Register extends Component {
                 <Form>
                   <Item success regular style={styles.loginScreenInput}>
                     <Icon type="FontAwesome" name="user" />
-                    <Input placeholderTextColor="#ccc" placeholder="Enter First Name" />
+                    <Input
+                      placeholderTextColor="#A9A9A9"
+                      placeholder="Enter First Name"
+                    />
                   </Item>
 
                   <Item success regular style={styles.loginScreenInput}>
                     <Icon type="FontAwesome" name="user" />
-                    <Input placeholder="Enter Last Name" />
+                    <Input
+                      placeholderTextColor="#A9A9A9"
+                      placeholder="Enter Last Name"
+                    />
                   </Item>
 
                   <Item success regular style={styles.loginScreenInput}>
                     <Icon type="MaterialIcons" name="phone" />
-                    <Input placeholder="Enter Phone No" />
+                    <Input
+                      placeholderTextColor="#A9A9A9"
+                      placeholder="Enter Phone No"
+                    />
                     <Button style={styles.registerVerifyBtn}>
                       <Text>Verify</Text>
                     </Button>
@@ -48,22 +57,34 @@ export default class Register extends Component {
 
                   <Item success regular style={styles.loginScreenInput}>
                     <Icon type="MaterialCommunityIcons" name="onepassword" />
-                    <Input placeholder="Enter OTP" />
+                    <Input
+                      placeholderTextColor="#A9A9A9"
+                      placeholder="Enter OTP"
+                    />
                   </Item>
 
                   <Item success regular style={styles.loginScreenInput}>
                     <Icon type="MaterialIcons" name="email" />
-                    <Input placeholder="Enter Email ID" />
+                    <Input
+                      placeholderTextColor="#A9A9A9"
+                      placeholder="Enter Email ID"
+                    />
                   </Item>
 
                   <Item success regular style={styles.loginScreenInput}>
                     <Icon type="MaterialIcons" name="security" />
-                    <Input placeholder="Enter Password" />
+                    <Input
+                      placeholderTextColor="#A9A9A9"
+                      placeholder="Enter Password"
+                    />
                   </Item>
 
                   <Item success regular style={styles.loginScreenInput}>
                     <Icon type="MaterialIcons" name="security" />
-                    <Input placeholder="Enter Confirm Password" />
+                    <Input
+                      placeholderTextColor="#A9A9A9"
+                      placeholder="Enter Confirm Password"
+                    />
                   </Item>
 
                   <Button
